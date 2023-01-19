@@ -34,7 +34,7 @@ trait RegistersWebAuthn
      *
      * @return \Illuminate\Http\Response
      */
-    public function register(Request $request, WebAuthnAuthenticatable $user): Response
+    public function register(Request $request, WebAuthnAuthenticatable $user)
     {
         $input = $request->validate($this->attestationRules());
 
